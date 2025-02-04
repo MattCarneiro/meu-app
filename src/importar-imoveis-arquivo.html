@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Importar Imóveis via Arquivo</title>
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+  <div class="max-w-2xl mx-auto p-6">
+    <h1 class="text-2xl font-bold text-teal-600">Importar Imóveis via Arquivo</h1>
+    <div class="mt-4">
+      <p>👉 Cada imóvel deve ter pelo menos um link apontando para uma foto dele, ou será adicionada uma foto genérica na apresentação do imóvel - você pode alterar essa foto a qualquer momento.</p>
+      <p>⌛ O tempo de importação pode levar até 1 hora, dependendo da quantidade de imóveis.</p>
+      <p>⚠️ O envio de arquivos em formatos diferentes de xml, csv ou xlsx acarretará em erro na importação.</p>
+    </div>
+    <div class="mt-4">
+      <label for="arquivo"><strong>Selecione o arquivo:</strong></label><br>
+      <input type="file" id="arquivo" accept=".csv,.xlsx,.xml" />
+    </div>
+    <div class="mt-6 flex justify-between">
+      <button class="bg-yellow-500 text-black px-4 py-2 rounded" id="voltar">Voltar</button>
+      <button class="bg-teal-600 text-white px-4 py-2 rounded" id="enviar">Enviar</button>
+    </div>
+  </div>
+  <script type="module" src="/src/importar-imoveis-arquivo.js"></script>
+</body>
+</html>

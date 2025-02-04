@@ -8,7 +8,6 @@ document.querySelector('#continuar').addEventListener('click', () => {
   if (selectedOption.value === 'link') {
     window.location.href = '/src/importar-imoveis-link.html';
   } else if (selectedOption.value === 'arquivo') {
-    // Redirecionar para a página de importação via arquivo (a ser implementada)
-    alert('Funcionalidade de importação via arquivo ainda não implementada.');
+    window.location.href = '/src/importar-imoveis-arquivo.html';
   }
 });
