@@ -59,10 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       body: JSON.stringify(dataToSend)
     })
-    .then(response => response.json())
-    .then(data => {
-      alert(data.message || 'Links enviados com sucesso.');
-      window.location.href = '/src/video-explicativo.html';
+    .then(response => {
+      if (response.ok) {
+        alert('Links enviados com sucesso.');
+        window.location.href = '/src/video-explicativo.html';
+      } else {
+        alert('Falha ao enviar os links.');
+      }
     })
     .catch(() => {
       alert('Erro de conexão com o webhook.');

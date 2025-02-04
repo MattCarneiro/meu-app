@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Importar Leads</title>
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+  <div class="max-w-2xl mx-auto p-6">
+    <h1 class="text-2xl font-bold text-teal-600">Importar Leads</h1>
+    <div class="mt-4">
+      <p>👉 O seu documento deve conter obrigatoriamente <strong>APENAS 2 colunas</strong>, uma chamada <strong>Nome</strong> e a outra chamada <strong>Telefone</strong>. Do contrário, a importação irá falhar.</p>
+      <p>📰 Se o arquivo for <strong>txt</strong>, ao invés de coluna, você separa <strong>APENAS</strong> nome e telefone por vírgula em cada linha. Por exemplo... <br>Neural Broker, 11912345678
+      <br>Neural Base, 11987654321</p>
+      <p>📱 O número deve incluir o <strong>DDD</strong> ou não será adicionado.</p>
+      <p>⚠️ Números repetidos ou que não tem WhatsApp não são adicionados.</p>
+      <p><strong>Atenção:</strong> O arquivo deve ser no formato txt, csv ou xlsx e ter no máximo 10MB.</p>
+    </div>
+    <div class="mt-4">
+      <label for="arquivo"><strong>Selecione o arquivo:</strong></label><br>
+      <input type="file" id="arquivo" accept=".txt,.csv,.xlsx" />
+    </div>
+    <div class="mt-6 flex justify-between">
+      <button class="bg-yellow-500 text-black px-4 py-2 rounded" id="voltar">Voltar</button>
+      <button class="bg-teal-600 text-white px-4 py-2 rounded" id="enviar">Enviar</button>
+    </div>
+  </div>
+  <script type="module" src="/src/importar-leads.js"></script>
+</body>
+</html>

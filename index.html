@@ -3,19 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onboarding</title>
+  <title>Importação de Imóveis</title>
   <link href="/src/style.css" rel="stylesheet">
 </head>
 <body class="bg-white text-gray-800">
   <div class="max-w-2xl mx-auto p-6">
     <h1 class="text-2xl font-bold text-teal-600">Importação de Imóveis</h1>
-    <p class="mt-4">Assista ao vídeo abaixo para uma explicação rápida sobre a importação de imóveis.</p>
-    <div class="mt-4">
-      <video controls class="w-full">
-        <source src="video.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-      </video>
-    </div>
+    <p class="mt-4">Escolha uma opção para importar seus imóveis.</p>
     <div class="mt-4">
       <label class="inline-flex items-center">
         <input type="radio" class="form-radio" name="importacao" value="link">
@@ -30,10 +24,6 @@
       <button class="bg-teal-600 text-white px-4 py-2 rounded" id="continuar">Continuar</button>
     </div>
   </div>
-  <script type="module">
-    import { authenticateUser } from './src/auth.js';
-    authenticateUser();
-  </script>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
